@@ -7,16 +7,26 @@
     %meta{ 'http-equiv' => 'X-UA-Compatible', :content => 'IE=edge,chrome=1' }/
     %meta{ :name => "viewport", :content => "width=device-width" }
     %title MovieLovie
-    %link{ :href => "lib/bootstrap/css/bootstrap.css" }
-    %link{ :href => "css/app.css" }
+    %link{ :rel => "stylesheet", :href => "lib/bootstrap/css/bootstrap.css" }
+    %link{ :rel => "stylesheet", :href => "css/app.css" }
 
   %body{:class => 'container'}
+
+    %div{:class => "navbar navbar-fixed-top"}
+      %div.navbar-inner
+        %div.container
+          %a{:href => "#", :class => "brand"}
+            Testing Angular
 
     %ul.menu
       %li
         %a{:href => "#/view1"} view1
       %li
         %a{:href => "#/view2"} view2
+
+    %a.btn{:href => "#"}
+      %i.icon-refresh
+      Refresh
 
     %div{"ng-view" => ""}
 

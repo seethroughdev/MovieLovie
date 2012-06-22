@@ -5,10 +5,19 @@
     <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
     <meta content='width=device-width' name='viewport'>
     <title>MovieLovie</title>
-    <link href='lib/bootstrap/css/bootstrap.css'>
-    <link href='css/app.css'>
+    <link href='lib/bootstrap/css/bootstrap.css' rel='stylesheet'>
+    <link href='css/app.css' rel='stylesheet'>
   </head>
   <body class='container'>
+    <div class='navbar navbar-fixed-top'>
+      <div class='navbar-inner'>
+        <div class='container'>
+          <a class='brand' href='#'>
+            Testing Angular
+          </a>
+        </div>
+      </div>
+    </div>
     <ul class='menu'>
       <li>
         <a href='#/view1'>view1</a>
@@ -17,6 +26,10 @@
         <a href='#/view2'>view2</a>
       </li>
     </ul>
+    <a class='btn' href='#'>
+      <i class='icon-refresh'></i>
+      Refresh
+    </a>
     <div ng-view=''></div>
     <div>
       Angular seed app: v
